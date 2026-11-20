@@ -1,4 +1,4 @@
-# oceanalt-com
+# OceanAlt
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,137 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-oceanalt-com is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://oceanalt.com/
+OceanAlt provides a compliance layer for AI agents to safely make payments by screening payee addresses and transaction risk before settlement. It offers a free, no‑signup API for address risk checks, tiered access for higher limits, and integrates identity, authorization, and AML checks to help agents decide whether a payment should proceed.
+
+**Areas:** Compliance · Risk Screening · API · Investigations · Developer Tools
+
+## OceanAlt on APIs.io
+
+Everything profiled for OceanAlt is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/oceanalt-com/](https://apis.io/providers/oceanalt-com/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [OceanAlt Free API](https://apis.io/apis/oceanalt-com/oceanalt-com-free-api/) — No API key, no signup. Fair-use rate limited.
+- [OceanAlt paid (mpp) API](https://apis.io/apis/oceanalt-com/oceanalt-com-paid-mpp-api/) — Pay-per-call over MPP (Machine Payments Protocol) on Tempo. Unpaid requests return 402 with a WWW-Authenticate: Payment challenge.
+- [OceanAlt paid (x402) API](https://apis.io/apis/oceanalt-com/oceanalt-com-paid-x402-api/) — Pay-per-call over x402. Unpaid requests return 402 with a machine-readable quote.
+- [OceanAlt X402 API](https://apis.io/apis/oceanalt-com/oceanalt-com-x402-api/) — The X402 API from OceanAlt — 1 operation(s) for x402.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Oceanalt Com Webhooks](https://apis.io/asyncapis/oceanalt-com/oceanalt-com-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [OceanAlt Agentic Access](https://apis.io/agentic-access/oceanalt-com/oceanalt-com-agentic-access/)
+
+#### JSON Schema (5)
+
+The data models the API reads and writes.
+
+- [DecisionResult](https://apis.io/schemas/oceanalt-com/oceanalt-com-decision-result/)
+- [EndpointResult](https://apis.io/schemas/oceanalt-com/oceanalt-com-endpoint-result/)
+- [PaymentIntentV1](https://apis.io/schemas/oceanalt-com/oceanalt-com-payment-intent-v1/)
+- [PaymentRequestResult](https://apis.io/schemas/oceanalt-com/oceanalt-com-payment-request-result/)
+- [ScreenResult](https://apis.io/schemas/oceanalt-com/oceanalt-com-screen-result/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Oceanalt Com Context](https://apis.io/jsonld/oceanalt-com/oceanalt-com-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [OceanAlt API Rules](https://apis.io/rules/oceanalt-com/oceanalt-com-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [OceanAlt Authentication](https://apis.io/security/oceanalt-com/oceanalt-com-authentication/)
+- [OceanAlt Domain Security](https://apis.io/security/oceanalt-com/oceanalt-com-domain-security/)
+- [OceanAlt Vulnerability Disclosure](https://apis.io/security/oceanalt-com/oceanalt-com-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [OceanAlt Plans Pricing](https://apis.io/plans/oceanalt-com/oceanalt-com-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://oceanalt.com/)
+- [API reference](https://oceanalt.com/zh/developers)
+- [Pricing](https://oceanalt.com/zh/pricing)
+- [Security](https://oceanalt.com/en/security)
+- [Terms of service](https://oceanalt.com/en/terms)
+- [Privacy policy](https://oceanalt.com/en/privacy)
+- [GitHub](https://github.com/OceanAlt)
+
+## API Evangelist rating
+
+**Kin Score 57.3** — strong · rubric 0.27.0 · scored 2026-11-19
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 68.9 |
+| Contract governance | 79.1 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 32.6 |
+| Access clarity | 60.0 |
+
+**Agent readiness 44.4** — agent-native
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | verified |
+| Error Semantics | verified |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | — |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/oceanalt-com/](https://apis.io/providers/oceanalt-com/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OceanAlt: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/oceanalt-com/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
